@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-          Arda ile işbirliği !
-          </p>
-        </header>
-      </div>
-    );
-  }
-}
+import Search from './containers/Search'
 
-export default App;
+const App = () => (
+  <Div>
+    <Search />
+  </Div>
+)
+
+const Div = styled.div`
+  padding: 2rem;
+`
+export default App

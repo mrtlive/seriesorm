@@ -1,7 +1,13 @@
 .App {
   text-align: center;
-}
 
+
+}
+.kucumen {
+background-color:#39adef;
+color:#39adef;
+
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
