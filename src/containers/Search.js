@@ -1,7 +1,27 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
 import Suggestions from './Suggestions'
+import './suggestions.css';
+import styled from 'styled-components'
+
+const Input = styled.input`
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #000;
+  font-family:verdana;
+  font-weight:bold;
+  font-size:12px;
+  background: #dbdbdb;
+  border: none;
+  border-radius: 4px;
+  text-align:center;
+
+`;
+const Form = styled.input`
+  margin:0 auto;
+
+`;
+
 
 const API_KEY = "b057a775c59a798f1c16d2979343aa79"
 const API_URL = 'https://api.themoviedb.org/3/search/movie'
@@ -34,15 +54,17 @@ class Search extends Component {
           this.getInfo()
         }
       } else if (!this.state.query) {
-        // this.hideDropdown()
+    //  this.hideDropdown()
+      this.getInfo()
+
       }
     })
   }
 
   render() {
     return (
-      <form>
-        <input
+      <form className='form'>
+        <Input
           placeholder="Filmi aramak için..."
           ref={input => this.search = input}
           onChange={this.handleInputChange}

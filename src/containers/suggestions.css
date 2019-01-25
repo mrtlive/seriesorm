@@ -1,0 +1,17 @@
+.showMovies{
+margin: 0 auto;
+background-color:#f9f9f9;
+text-align:Center;
+width:400px;
+}
+.listmovie{
+font-family:verdana;
+font-style:bold;
+font-size:12px;
+color:#000;
+border:2px solid #b6b7ba;
+margin-bottom:4px;
+}
+.form{
+text-align:center;
+}
